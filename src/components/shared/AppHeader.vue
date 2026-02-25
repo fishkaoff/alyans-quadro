@@ -20,9 +20,29 @@
 
       <app-button class="btn">Связаться</app-button>
 
-      <button class="burger-btn">
+      <button class="burger-btn" @click="opened = !opened">
         <img :src="BurgerBtn" alt="Открыть меню" class="image" />
       </button>
+    </div>
+
+    <div class="burger-menu" v-if="opened">
+      <div class="close-btn-container">
+        <button class="btn" @click="opened = !opened">
+          <img :src="CloseBtn" alt="Закрыть меню" class="image" />
+        </button>
+      </div>
+
+      <ul class="burger-nav">
+        <li class="nav-item">
+          <router-link to="" class="nav-link">Главная</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="" class="nav-link">Каталог</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="" class="nav-link">О компании</router-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -31,6 +51,10 @@
 import router from "@/router";
 import AppButton from "./AppButton.vue";
 import BurgerBtn from "@/assets/images/burger.svg";
+import CloseBtn from "@/assets/images/close.svg";
+import { ref } from "vue";
+
+const opened = ref(false);
 </script>
 
 <style scoped lang="scss">
@@ -61,6 +85,10 @@ import BurgerBtn from "@/assets/images/burger.svg";
       .title {
         font-weight: 800;
         padding-left: 10px;
+
+        @media screen and (max-width: 320px) {
+          font-size: 18px;
+        }
       }
 
       .icon {
@@ -93,6 +121,10 @@ import BurgerBtn from "@/assets/images/burger.svg";
     .btn {
       width: 20%;
       min-width: 150px;
+
+      @media screen and (max-width: 400px) {
+        display: none;
+      }
     }
 
     .burger-btn {
@@ -104,6 +136,47 @@ import BurgerBtn from "@/assets/images/burger.svg";
       .image {
         width: 30px;
         height: 30px;
+      }
+    }
+  }
+
+  .burger-menu {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    z-index: 1001;
+    top: 0;
+
+    background-color: variables.$color-bg;
+
+    .close-btn-container {
+      width: 90%;
+      margin: 40px auto;
+      display: flex;
+      justify-content: flex-end;
+
+      .btn {
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    .burger-nav {
+      .nav-item {
+        @include mixins.text-base(28px);
+        text-align: center;
+        padding-top: 40px;
+
+        .nav-link {
+          color: #000;
+          transition: all 0.7s;
+        }
+
+        .nav-link:hover {
+          color: variables.$color-accent-hover;
+        }
       }
     }
   }

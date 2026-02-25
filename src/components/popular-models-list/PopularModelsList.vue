@@ -1,11 +1,13 @@
 <template>
   <div class="popular-models-list">
-    <model-card
-      v-for="product in productsStore.atvs.slice(0, 4)"
-      :model="product"
-      :key="product.id"
-      class="card"
-    />
+    <div class="cards">
+      <model-card
+        v-for="product in productsStore.atvs.slice(0, 4)"
+        :model="product"
+        :key="product.id"
+        class="card"
+      />
+    </div>
 
     <button class="catalog-btn">
       <p class="text">Смотреть каталог</p>
@@ -24,14 +26,19 @@ const productsStore = useProductsStore();
 
 <style scoped lang="scss">
 .popular-models-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 
-  .card {
-    flex: 1;
-    min-width: 300px;
+    .card {
+      flex: 1;
+      min-width: 300px;
+      @media screen and (max-width: 300px) {
+        min-width: 100%;
+      }
+    }
   }
 
   .catalog-btn {
