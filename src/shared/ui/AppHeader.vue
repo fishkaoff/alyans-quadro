@@ -8,7 +8,9 @@
 
       <ul class="nav">
         <li class="nav-item">
-          <router-link to="" class="nav-link">Главная</router-link>
+          <router-link :to="{ name: 'Home' }" class="nav-link"
+            >Главная</router-link
+          >
         </li>
         <li class="nav-item">
           <router-link :to="{ name: 'Catalog' }" class="nav-link"

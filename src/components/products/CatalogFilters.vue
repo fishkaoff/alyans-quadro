@@ -22,19 +22,50 @@
       </div>
 
       <div class="filter-group">
-        <h2 class="filter-name">Объем двигателя</h2>
+        <h2 class="filter-name">Объем двигателя (минимум)</h2>
+        <div class="selector">
+          <range-slider
+            :min="150"
+            :max="300"
+            v-model="engineVolume"
+            class="range-slider"
+          />
+          <p class="value">{{ engineVolume }}</p>
+        </div>
       </div>
 
       <div class="filter-group">
         <h2 class="filter-name">Мощность (л.c)</h2>
+        <div class="selector">
+          <range-slider :min="7" :max="50" v-model="hp" class="range-slider" />
+          <p class="value">{{ hp }}</p>
+        </div>
       </div>
 
       <div class="filter-group">
         <h2 class="filter-name">Максимальная скорость (км/ч)</h2>
+        <div class="selector">
+          <range-slider
+            :min="30"
+            :max="120"
+            v-model="maxSpeed"
+            class="range-slider"
+          />
+          <p class="value">{{ maxSpeed }}</p>
+        </div>
       </div>
 
       <div class="filter-group">
-        <h2 class="filter-name">Цена</h2>
+        <h2 class="filter-name">Цена (максимум)</h2>
+        <div class="selector">
+          <range-slider
+            :min="60000"
+            :max="2000000"
+            v-model="price"
+            class="range-slider"
+          />
+          <p class="value">{{ price }} ₽</p>
+        </div>
       </div>
     </div>
   </div>
@@ -43,9 +74,15 @@
 <script setup lang="ts">
 import { ref, watch } from "vue";
 import { useCategoriesStore } from "../../shared/stores/categories";
+import RangeSlider from "@/shared/ui/RangeSlider.vue";
+
+const categoriesStore = useCategoriesStore();
 
 const activeCategory = ref("");
-const categoriesStore = useCategoriesStore();
+const engineVolume = ref(300);
+const hp = ref(20);
+const maxSpeed = ref(70);
+const price = ref(170000);
 
 const emit = defineEmits(["update:category"]);
 const updateActiveCategory = (id: string) => {
@@ -84,6 +121,28 @@ watch(activeCategory, () => {
         font-size: 16px;
         text-transform: uppercase;
         font-weight: 600;
+      }
+
+      .selector {
+        padding-top: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+
+        .range-slider {
+          flex: 1;
+          min-width: 200px;
+        }
+
+        .value {
+          flex: 1;
+          min-width: 30px;
+          max-width: 100px;
+          @include mixins.text-base(16px);
+          font-weight: 600;
+        }
       }
 
       .btns {
