@@ -40,7 +40,7 @@ import ChildAtv from "@/assets/images/range-atv-01.png";
 import AdultAtv from "@/assets/images/range-atv-02.png";
 import HeavyAtv from "@/assets/images/range-atv-03.png";
 import CategoryCard from "./CategoryCard.vue";
-import SectionTitle from "../shared/SectionTitle.vue";
+import SectionTitle from "@/shared/ui/SectionTitle.vue";
 
 const categories = [
   {

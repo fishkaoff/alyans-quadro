@@ -1,4 +1,5 @@
 import HomePage from "@/views/home/HomePage.vue";
+import CatalogPage from "@/views/catalog/CatalogPage.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
@@ -8,6 +9,11 @@ const router = createRouter({
       path: "/",
       name: "Home",
       component: HomePage,
+    },
+    {
+      path: "/catalog",
+      name: "Catalog",
+      component: CatalogPage,
     },
   ],
 });

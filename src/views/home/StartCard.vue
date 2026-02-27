@@ -8,7 +8,9 @@
         <app-button class="btn" @click="scrollToBlock('categories')"
           >Подробнее</app-button
         >
-        <app-button class="btn">Каталог</app-button>
+        <app-button class="btn" @click="$router.push({ name: 'Catalog' })"
+          >Каталог</app-button
+        >
       </div>
 
       <h2 class="price">
@@ -22,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import AppButton from "@/components/shared/AppButton.vue";
+import AppButton from "@/shared/ui/AppButton.vue";
 import { scrollToBlock } from "@/shared/lib/scroll";
 import type { Category } from "@/shared/types/types";
 defineProps<{

@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import AppButton from "@/components/shared/AppButton.vue";
+import AppButton from "@/shared/ui/AppButton.vue";
 defineProps<{
   img: string | undefined;
   title: string | undefined;

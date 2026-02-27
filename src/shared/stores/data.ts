@@ -4,6 +4,7 @@ import type { Pitbike } from "../types/products/pitbike";
 export const pitbikeList: Pitbike[] = [
   {
     id: "pit-001",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
     sku: "AV-PIT-150-RED",
     manufacturer_sku: "AV150R2025",
     brand: "Avantis",
@@ -29,6 +30,7 @@ export const pitbikeList: Pitbike[] = [
   },
   {
     id: "pit-002",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
     sku: "KAYO-BASIC-125",
     manufacturer_sku: "KY125T6",
     brand: "Kayo",
@@ -54,6 +56,7 @@ export const pitbikeList: Pitbike[] = [
   },
   {
     id: "pit-003",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
     sku: "YCF-140-ADVENTURE",
     manufacturer_sku: "YCF140ADV",
     brand: "YCF",
@@ -79,6 +82,7 @@ export const pitbikeList: Pitbike[] = [
   },
   {
     id: "pit-004",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
     sku: "COOLMOTO-138R",
     manufacturer_sku: "CM138R-PRO",
     brand: "Coolmoto",
@@ -104,6 +108,7 @@ export const pitbikeList: Pitbike[] = [
   },
   {
     id: "pit-005",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
     sku: "BSE-160-GP",
     manufacturer_sku: "BSE160R",
     brand: "BSE",
@@ -129,6 +134,7 @@ export const pitbikeList: Pitbike[] = [
   },
   {
     id: "pit-006",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
     sku: "PITSTER-PRO-125",
     manufacturer_sku: "PP125X",
     brand: "Pitster Pro",
@@ -154,6 +160,7 @@ export const pitbikeList: Pitbike[] = [
   },
   {
     id: "pit-007",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
     sku: "MOTOYA-MINI-110",
     manufacturer_sku: "MT110M",
     brand: "Motoya",
@@ -179,6 +186,7 @@ export const pitbikeList: Pitbike[] = [
   },
   {
     id: "pit-008",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
     sku: "IRBIS-TTR125",
     manufacturer_sku: "IRB125R",
     brand: "Irbis",
@@ -204,6 +212,7 @@ export const pitbikeList: Pitbike[] = [
   },
   {
     id: "pit-009",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
     sku: "ZONGSHEN-PITBOSS",
     manufacturer_sku: "ZS150GY",
     brand: "Zongshen",
@@ -229,6 +238,7 @@ export const pitbikeList: Pitbike[] = [
   },
   {
     id: "pit-010",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
     sku: "APOLLO-125-DB",
     manufacturer_sku: "AP125RF",
     brand: "Apollo",
@@ -257,6 +267,7 @@ export const pitbikeList: Pitbike[] = [
 export const atvList: Atv[] = [
   {
     id: "atv-001",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
     sku: "AV-QUAD-125-BLK",
     manufacturer_sku: "AV125BLK2025",
     brand: "Avantis",
@@ -292,6 +303,7 @@ export const atvList: Atv[] = [
   },
   {
     id: "atv-002",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
     sku: "CF-MOTO-CFOR500",
     manufacturer_sku: "CF500-4X4",
     brand: "CF Moto",
@@ -327,6 +339,7 @@ export const atvList: Atv[] = [
   },
   {
     id: "atv-003",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
     sku: "YAMAHA-GRIZZLY700",
     manufacturer_sku: "YGR700EPS",
     brand: "Yamaha",
@@ -362,6 +375,7 @@ export const atvList: Atv[] = [
   },
   {
     id: "atv-004",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
     sku: "POLARIS-SPORTSMAN570",
     manufacturer_sku: "PS570EP",
     brand: "Polaris",
@@ -397,6 +411,7 @@ export const atvList: Atv[] = [
   },
   {
     id: "atv-005",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
     sku: "CANAM-OUTLANDER650",
     manufacturer_sku: "CMO650XMR",
     brand: "Can-Am",
@@ -432,6 +447,7 @@ export const atvList: Atv[] = [
   },
   {
     id: "atv-006",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
     sku: "STELS-ATV650-GUEPARD",
     manufacturer_sku: "ST650G",
     brand: "Stels",
@@ -467,6 +483,7 @@ export const atvList: Atv[] = [
   },
   {
     id: "atv-007",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
     sku: "IRBIS-ATV300L",
     manufacturer_sku: "IRB300L",
     brand: "Irbis",
@@ -502,6 +519,7 @@ export const atvList: Atv[] = [
   },
   {
     id: "atv-008",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
     sku: "KAWASAKI-BRUCE250",
     manufacturer_sku: "KBF250",
     brand: "Kawasaki",
@@ -537,6 +555,7 @@ export const atvList: Atv[] = [
   },
   {
     id: "atv-009",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
     sku: "HONDA-TRX420",
     manufacturer_sku: "H420FA",
     brand: "Honda",
@@ -572,6 +591,7 @@ export const atvList: Atv[] = [
   },
   {
     id: "atv-010",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
     sku: "MOTAX-ATV-200",
     manufacturer_sku: "MTX200-2WD",
     brand: "Motax",

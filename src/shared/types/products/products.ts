@@ -3,6 +3,7 @@ export interface Product {
   sku: string;
   manufacturer_sku: string;
   images: string[];
+  categoryId: string;
 
   brand: string;
   engineVolume: number;

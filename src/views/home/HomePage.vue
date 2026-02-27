@@ -51,14 +51,14 @@
 </template>
 
 <script setup lang="ts">
-import AppCarousel from "@/components/shared/AppCarousel.vue";
+import AppCarousel from "@/shared/ui/AppCarousel.vue";
 import WideRange from "../../components/wide-range/WideRange.vue";
 import StartCard from "./StartCard.vue";
 import TrustInUs from "@/components/trust-in-us/TrustInUs.vue";
-import SectionTitle from "@/components/shared/SectionTitle.vue";
-import PopularModelsList from "@/components/popular-models-list/PopularModelsList.vue";
+import SectionTitle from "@/shared/ui/SectionTitle.vue";
+import PopularModelsList from "@/components/products/PopularModelsList.vue";
 import StatsBlock from "./StatsBlock.vue";
-import AppButton from "@/components/shared/AppButton.vue";
+import AppButton from "@/shared/ui/AppButton.vue";
 import { SwiperSlide } from "swiper/vue";
 import Atv01 from "@/assets/images/atv-01.png";
 import Atv02 from "@/assets/images/atv-02.png";

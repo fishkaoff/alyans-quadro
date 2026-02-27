@@ -11,7 +11,9 @@
           <router-link to="" class="nav-link">Главная</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="" class="nav-link">Каталог</router-link>
+          <router-link :to="{ name: 'Catalog' }" class="nav-link"
+            >Каталог</router-link
+          >
         </li>
         <li class="nav-item">
           <router-link to="" class="nav-link">О компании</router-link>
@@ -33,13 +35,17 @@
       </div>
 
       <ul class="burger-nav">
-        <li class="nav-item">
-          <router-link to="" class="nav-link">Главная</router-link>
+        <li class="nav-item" @click="opened = false">
+          <router-link :to="{ name: 'Home' }" class="nav-link"
+            >Главная</router-link
+          >
         </li>
-        <li class="nav-item">
-          <router-link to="" class="nav-link">Каталог</router-link>
+        <li class="nav-item" @click="opened = false">
+          <router-link :to="{ name: 'Catalog' }" class="nav-link"
+            >Каталог</router-link
+          >
         </li>
-        <li class="nav-item">
+        <li class="nav-item" @click="opened = false">
           <router-link to="" class="nav-link">О компании</router-link>
         </li>
       </ul>
@@ -159,6 +165,7 @@ const opened = ref(false);
       .btn {
         outline: none;
         border: none;
+        background-color: transparent;
         cursor: pointer;
       }
     }

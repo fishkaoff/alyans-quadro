@@ -55,7 +55,7 @@
 </template>
 
 <script setup lang="ts">
-import SectionTitle from "../shared/SectionTitle.vue";
+import SectionTitle from "@/shared/ui/SectionTitle.vue";
 </script>
 
 <style scoped lang="scss">

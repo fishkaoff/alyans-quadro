@@ -1,27 +1,43 @@
 <template>
   <div class="popular-models-list">
     <div class="cards">
+      <h1 class="no-products" v-if="products.length <= 0">
+        К сожалению по заданным фильтрам товар не найден
+      </h1>
       <model-card
-        v-for="product in productsStore.atvs.slice(0, 4)"
+        v-else
+        v-for="product in products"
         :model="product"
         :key="product.id"
         class="card"
       />
     </div>
-
-    <button class="catalog-btn">
-      <p class="text">Смотреть каталог</p>
-      <img :src="ArrowIcon" alt="дальше" class="icon" />
-    </button>
   </div>
 </template>
 
 <script setup lang="ts">
 import ModelCard from "./ModelCard.vue";
 import { useProductsStore } from "@/shared/stores/products";
-import ArrowIcon from "@/assets/images/arrow-right-long.svg";
+import { computed } from "vue";
+
+const props = defineProps<{
+  category?: string;
+}>();
 
 const productsStore = useProductsStore();
+
+const allProducts = computed(() => [
+  ...productsStore.atvs,
+  ...productsStore.pitbikes,
+]);
+
+const products = computed(() => {
+  if (!props.category) return allProducts.value;
+
+  return allProducts.value.filter(
+    (product) => product.categoryId === props.category,
+  );
+});
 </script>
 
 <style scoped lang="scss">
@@ -35,9 +51,15 @@ const productsStore = useProductsStore();
     .card {
       flex: 1;
       min-width: 300px;
+
       @media screen and (max-width: 300px) {
         min-width: 100%;
       }
+    }
+
+    .no-products {
+      @include mixins.text-base(30px);
+      text-align: center;
     }
   }
 

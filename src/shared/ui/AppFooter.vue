@@ -16,8 +16,12 @@
       <div class="cols">
         <div class="col">
           <h2 class="col-title">Навигация</h2>
-          <h3 class="col-item"><router-link :to="{}">Главная</router-link></h3>
-          <h3 class="col-item"><router-link :to="{}">Каталог</router-link></h3>
+          <h3 class="col-item">
+            <router-link :to="{ name: 'Home' }">Главная</router-link>
+          </h3>
+          <h3 class="col-item">
+            <router-link :to="{ name: 'Catalog' }">Каталог</router-link>
+          </h3>
           <h3 class="col-item">
             <router-link :to="{}">О компании</router-link>
           </h3>
