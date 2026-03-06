@@ -22,6 +22,9 @@ import { computed } from "vue";
 
 const props = defineProps<{
   category?: string;
+  engineVolume?: number;
+  hp?: number;
+  price?: number;
 }>();
 
 const productsStore = useProductsStore();
@@ -32,11 +35,25 @@ const allProducts = computed(() => [
 ]);
 
 const products = computed(() => {
-  if (!props.category) return allProducts.value;
+  return allProducts.value.filter((product) => {
+    if (props.category && product.categoryId !== props.category) {
+      return false;
+    }
 
-  return allProducts.value.filter(
-    (product) => product.categoryId === props.category,
-  );
+    if (props.engineVolume && product.engineVolume < props.engineVolume) {
+      return false;
+    }
+
+    if (props.hp && product.enginePower < props.hp) {
+      return false;
+    }
+
+    if (props.price && product.price > props.price) {
+      return false;
+    }
+
+    return true;
+  });
 });
 </script>
 

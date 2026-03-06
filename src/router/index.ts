@@ -1,5 +1,6 @@
 import HomePage from "@/views/home/HomePage.vue";
-import CatalogPage from "@/views/catalog/CatalogPage.vue";
+import CatalogPage from "@/views/product/CatalogPage.vue";
+import ProductPage from "@/views/product/ProductPage.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
@@ -14,6 +15,11 @@ const router = createRouter({
       path: "/catalog",
       name: "Catalog",
       component: CatalogPage,
+    },
+    {
+      path: "/catalog/:id",
+      name: "ProductPage",
+      component: ProductPage,
     },
   ],
 });

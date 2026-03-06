@@ -8,10 +8,19 @@
     <div class="content">
       <catalog-filters
         class="filters"
-        @update:category="(updCategory: string) => (category = updCategory)"
+        @update:category="(v) => (category = v)"
+        @update:engineVolume="(v) => (engineVolume = v)"
+        @update:hp="(v) => (hp = v)"
+        @update:price="(v) => (price = v)"
       />
 
-      <models-list class="models-list" :category="category" />
+      <models-list
+        class="models-list"
+        :category="category"
+        :engineVolume="engineVolume"
+        :hp="hp"
+        :price="price"
+      />
     </div>
   </div>
 </template>
@@ -23,6 +32,9 @@ import ModelsList from "@/components/products/ModelsList.vue";
 import { ref } from "vue";
 
 const category = ref("");
+const engineVolume = ref(150);
+const hp = ref(7);
+const price = ref(2000000);
 </script>
 
 <style scoped lang="scss">

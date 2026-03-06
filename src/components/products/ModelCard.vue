@@ -14,7 +14,9 @@
       <div class="bottom">
         <div class="row">
           <h3 class="price">{{ model.price }} ₽</h3>
-          <router-link :to="{ name: 'Home' }" class="full-btn"
+          <router-link
+            :to="{ name: 'ProductPage', params: { id: model.id } }"
+            class="full-btn"
             >Подробнее</router-link
           >
         </div>

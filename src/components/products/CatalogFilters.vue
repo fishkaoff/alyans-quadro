@@ -43,19 +43,6 @@
       </div>
 
       <div class="filter-group">
-        <h2 class="filter-name">Максимальная скорость (км/ч)</h2>
-        <div class="selector">
-          <range-slider
-            :min="30"
-            :max="120"
-            v-model="maxSpeed"
-            class="range-slider"
-          />
-          <p class="value">{{ maxSpeed }}</p>
-        </div>
-      </div>
-
-      <div class="filter-group">
         <h2 class="filter-name">Цена (максимум)</h2>
         <div class="selector">
           <range-slider
@@ -76,6 +63,14 @@ import { ref, watch } from "vue";
 import { useCategoriesStore } from "../../shared/stores/categories";
 import RangeSlider from "@/shared/ui/RangeSlider.vue";
 
+const emit = defineEmits([
+  "update:category",
+  "update:engineVolume",
+  "update:hp",
+  "update:maxSpeed",
+  "update:price",
+]);
+
 const categoriesStore = useCategoriesStore();
 
 const activeCategory = ref("");
@@ -84,7 +79,6 @@ const hp = ref(20);
 const maxSpeed = ref(70);
 const price = ref(170000);
 
-const emit = defineEmits(["update:category"]);
 const updateActiveCategory = (id: string) => {
   if (activeCategory.value == id) {
     activeCategory.value = "";
@@ -93,9 +87,20 @@ const updateActiveCategory = (id: string) => {
   }
 };
 
-// emit if category changed
 watch(activeCategory, () => {
   emit("update:category", activeCategory.value);
+});
+
+watch(engineVolume, () => {
+  emit("update:engineVolume", engineVolume.value);
+});
+
+watch(hp, () => {
+  emit("update:hp", hp.value);
+});
+
+watch(price, () => {
+  emit("update:price", price.value);
 });
 </script>
 
