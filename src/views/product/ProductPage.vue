@@ -13,8 +13,19 @@
           двигатель обеспечивают молниеносный отклик.
         </p>
 
-        <div class="specs">
-            
+        <div class="short-specs">
+          <div class="spec">
+            <h3 class="num">{{ product?.enginePower }} л.с</h3>
+            <h3 class="text">Мощность</h3>
+          </div>
+          <div class="spec">
+            <h3 class="num">{{ product?.engineVolume }} куб.</h3>
+            <h3 class="text">Объем</h3>
+          </div>
+          <div class="spec">
+            <h3 class="num">{{ product?.fuelType }}</h3>
+            <h3 class="text">Топливо</h3>
+          </div>
         </div>
 
         <div class="bottom">
@@ -80,6 +91,34 @@ const product = allProducts.find((product) => product.id == id);
         color: variables.$color-fg;
         line-height: 1.5em;
         margin-top: 40px;
+      }
+
+      .short-specs {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid rgb(207, 207, 207);
+        border-top: 1px solid rgb(207, 207, 207);
+
+        .spec {
+          flex: 1;
+          max-width: 100px;
+
+          @include mixins.text-base(18px);
+
+          .num {
+            font-weight: 600;
+          }
+
+          .text {
+            color: variables.$color-fg;
+            padding-top: 5px;
+          }
+        }
       }
 
       .bottom {
