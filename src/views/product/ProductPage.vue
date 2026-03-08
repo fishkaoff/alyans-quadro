@@ -1,36 +1,49 @@
 <template>
   <div class="product-page">
-    <div class="cols">
-      <div class="image-container">
-        <img :src="product?.images[0]" alt="Фото" class="image" />
-      </div>
+    <short-specs :product="product" class="container" />
 
-      <div class="text-container">
-        <h1 class="title">{{ product?.brand }}</h1>
-        <p class="description">
-          Спортивный квадроцикл с агрессивным характером. Идеален для тех, кто
-          ищет максимум адреналина на любой трассе. Лёгкая рама и мощный
-          двигатель обеспечивают молниеносный отклик.
-        </p>
+    <div class="specs">
+      <div class="content">
+        <h1 class="title">Характеристики</h1>
 
-        <div class="short-specs">
-          <div class="spec">
-            <h3 class="num">{{ product?.enginePower }} л.с</h3>
-            <h3 class="text">Мощность</h3>
+        <div class="cols">
+          <div class="col">
+            <div class="row">
+              <p class="spec-name">Тип зажигания</p>
+              <p class="spec-value">{{ product?.ignitionType }}</p>
+            </div>
+            <div class="row">
+              <p class="spec-name">Тип охлаждения</p>
+              <p class="spec-value">{{ product?.coolingType }}</p>
+            </div>
+            <div class="row">
+              <p class="spec-name">Вес</p>
+              <p class="spec-value">{{ product?.dryWeight }} кг</p>
+            </div>
+            <div class="row">
+              <p class="spec-name">Топливная система</p>
+              <p class="spec-value">{{ product?.fuelSystem }}</p>
+            </div>
           </div>
-          <div class="spec">
-            <h3 class="num">{{ product?.engineVolume }} куб.</h3>
-            <h3 class="text">Объем</h3>
-          </div>
-          <div class="spec">
-            <h3 class="num">{{ product?.fuelType }}</h3>
-            <h3 class="text">Топливо</h3>
-          </div>
-        </div>
 
-        <div class="bottom">
-          <h2 class="price">{{ product?.price }} ₽</h2>
-          <app-button class="btn">Связаться</app-button>
+          <div class="col">
+            <div class="row">
+              <p class="spec-name">Фара</p>
+              <p class="spec-value">{{ product?.headlight }}</p>
+            </div>
+            <div class="row">
+              <p class="spec-name">Тип трансмиссии</p>
+              <p class="spec-value">{{ product?.transmissionType }}</p>
+            </div>
+            <div class="row">
+              <p class="spec-name">Тип стартера</p>
+              <p class="spec-value">{{ product?.starterType }}</p>
+            </div>
+            <div class="row">
+              <p class="spec-name">Объем бака</p>
+              <p class="spec-value">{{ product?.fuelTankVolume }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -39,8 +52,8 @@
 
 <script setup lang="ts">
 import { useProductsStore } from "@/shared/stores/products";
+import ShortSpecs from "./ShortSpecs.vue";
 import { useRoute } from "vue-router";
-import AppButton from "@/shared/ui/AppButton.vue";
 
 const id = useRoute().params.id;
 const productsStore = useProductsStore();
@@ -51,93 +64,59 @@ const product = allProducts.find((product) => product.id == id);
 
 <style scoped lang="scss">
 .product-page {
-  @include mixins.container;
   margin-top: 130px;
   padding-bottom: 30px;
 
-  .cols {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+  .container {
+    @include mixins.container;
+  }
 
-    .image-container {
-      flex: 1;
-      min-width: 400px;
-      max-width: 700px;
+  .specs {
+    margin-top: 60px;
+    background-color: variables.$color-card-bg;
 
-      .image {
-        width: 100%;
-        height: auto;
-      }
-
-      @media screen and (max-width: 400px) {
-        min-width: 100%;
-      }
-    }
-
-    .text-container {
-      flex: 1;
-      min-width: 300px;
-
+    .content {
+      @include mixins.container;
       @include mixins.text-base(18px);
 
+      padding-top: 40px;
+      padding-bottom: 40px;
+
       .title {
-        font-size: 60px;
+        color: variables.$color-fg;
+        text-transform: uppercase;
         font-weight: 600;
       }
 
-      .description {
-        color: variables.$color-fg;
-        line-height: 1.5em;
-        margin-top: 40px;
-      }
+      .cols {
+        margin-top: 20px;
 
-      .short-specs {
         display: flex;
-        justify-content: space-around;
-        margin-top: 40px;
-
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-        border-bottom: 1px solid rgb(207, 207, 207);
-        border-top: 1px solid rgb(207, 207, 207);
-
-        .spec {
-          flex: 1;
-          max-width: 100px;
-
-          @include mixins.text-base(18px);
-
-          .num {
-            font-weight: 600;
-          }
-
-          .text {
-            color: variables.$color-fg;
-            padding-top: 5px;
-          }
-        }
-      }
-
-      .bottom {
-        display: flex;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
         gap: 40px;
-        margin-top: 40px;
 
-        .price {
+        .col {
           flex: 1;
-          min-width: 200px;
+          min-width: 250px;
 
-          font-size: 26px;
-          font-weight: 600;
+          .row {
+            padding: 20px;
+            border-bottom: 1px solid rgb(207, 207, 207);
+
+            display: flex;
+            justify-content: space-between;
+
+            .spec-name {
+              color: variables.$color-fg;
+              font-size: 16px;
+            }
+
+            .spec-value {
+              font-weight: 600;
+            }
+          }
         }
-      }
-
-      @media screen and (max-width: 300px) {
-        min-width: 100%;
       }
     }
   }
