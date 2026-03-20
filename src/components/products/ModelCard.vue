@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Product } from "@/shared/types/products/products";
+import type { Product } from "@/shared/types/products";
 
 defineProps<{
   model: Product;

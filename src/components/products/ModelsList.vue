@@ -29,13 +29,8 @@ const props = defineProps<{
 
 const productsStore = useProductsStore();
 
-const allProducts = computed(() => [
-  ...productsStore.atvs,
-  ...productsStore.pitbikes,
-]);
-
 const products = computed(() => {
-  return allProducts.value.filter((product) => {
+  return productsStore.products.filter((product) => {
     if (props.category && product.categoryId !== props.category) {
       return false;
     }

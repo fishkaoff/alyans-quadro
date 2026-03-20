@@ -1,17 +1,14 @@
 import { ref } from "vue";
 import { defineStore } from "pinia";
-import type { Atv } from "../types/products/atv";
-import type { Pitbike } from "../types/products/pitbike";
-import { atvList, pitbikeList } from "./data";
+import { atvList } from "./data";
+import type { Product } from "../types/products";
 
 export const useProductsStore = defineStore("products", () => {
-  const atvs = ref<Atv[]>([]);
-  const pitbikes = ref<Pitbike[]>([]);
+  const products = ref<Product[]>([]);
 
   async function loadProducts() {
-    atvs.value = atvList;
-    pitbikes.value = pitbikeList;
+    products.value = atvList;
   }
 
-  return { atvs, pitbikes, loadProducts };
+  return { products, loadProducts };
 });

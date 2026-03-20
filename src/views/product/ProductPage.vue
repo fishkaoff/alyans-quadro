@@ -57,9 +57,8 @@ import { useRoute } from "vue-router";
 
 const id = useRoute().params.id;
 const productsStore = useProductsStore();
-const allProducts = [...productsStore.atvs, ...productsStore.pitbikes];
 
-const product = allProducts.find((product) => product.id == id);
+const product = productsStore.products.find((product) => product.id == id);
 </script>
 
 <style scoped lang="scss">

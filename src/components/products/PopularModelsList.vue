@@ -2,7 +2,7 @@
   <div class="popular-models-list">
     <div class="cards">
       <model-card
-        v-for="product in productsStore.atvs.slice(0, 4)"
+        v-for="product in productsStore.products.slice(0, 4)"
         :model="product"
         :key="product.id"
         class="card"

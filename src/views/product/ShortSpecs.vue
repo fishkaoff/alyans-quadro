@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Product } from "@/shared/types/products/products";
+import type { Product } from "@/shared/types/products";
 import AppButton from "@/shared/ui/AppButton.vue";
 
 defineProps<{

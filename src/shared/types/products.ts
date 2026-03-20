@@ -20,4 +20,20 @@ export interface Product {
   headlight: string;
   year: number;
   price: number;
+
+  rearTrunk: string;
+  frontTrunk: string;
+  handProtection: string;
+  reversGear: string;
+  wheelType: string;
+  mirrors: string;
+  horn: string;
+  heatedGrips: string;
+  frontSuspensionType: string;
+  rearSuspensionType: string;
+  // армированные шланги
+  frontBrakeHose: string;
+  groundClearance: string;
+
+  starterKick?: boolean;
 }
