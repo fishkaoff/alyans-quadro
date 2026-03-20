@@ -18,7 +18,9 @@
           >
         </li>
         <li class="nav-item">
-          <router-link to="" class="nav-link">О компании</router-link>
+          <router-link :to="{ name: 'AboutPage' }" class="nav-link"
+            >О компании</router-link
+          >
         </li>
       </ul>
 

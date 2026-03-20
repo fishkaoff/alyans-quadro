@@ -23,7 +23,7 @@
             <router-link :to="{ name: 'Catalog' }">Каталог</router-link>
           </h3>
           <h3 class="col-item">
-            <router-link :to="{}">О компании</router-link>
+            <router-link :to="{ name: 'AboutPage' }">О компании</router-link>
           </h3>
           <h3 class="col-item"><router-link :to="{}">Контакты</router-link></h3>
         </div>
