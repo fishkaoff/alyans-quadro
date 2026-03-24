@@ -24,7 +24,9 @@
         </li>
       </ul>
 
-      <app-button class="btn">Связаться</app-button>
+      <app-button class="btn" @click="router.push({ name: 'ContactsPage' })"
+        >Связаться</app-button
+      >
 
       <button class="burger-btn" @click="opened = !opened">
         <img :src="BurgerBtn" alt="Открыть меню" class="image" />
@@ -50,7 +52,9 @@
           >
         </li>
         <li class="nav-item" @click="opened = false">
-          <router-link to="" class="nav-link">О компании</router-link>
+          <router-link :to="{ name: 'AboutPage' }" class="nav-link"
+            >О компании</router-link
+          >
         </li>
       </ul>
     </div>

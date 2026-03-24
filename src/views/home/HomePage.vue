@@ -43,7 +43,9 @@
       </p>
 
       <div class="btns">
-        <app-button class="btn">Записаться</app-button>
+        <app-button class="btn" @click="$router.push({ name: 'ContactsPage' })"
+          >Записаться</app-button
+        >
         <button class="btn bordered">+7 (927) 936-66-26</button>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import AboutView from "@/views/about/AboutView.vue";
+import ContactPage from "@/views/contact/ContactPage.vue";
 import HomePage from "@/views/home/HomePage.vue";
 import CatalogPage from "@/views/product/CatalogPage.vue";
 import ProductPage from "@/views/product/ProductPage.vue";
@@ -26,6 +27,11 @@ const router = createRouter({
       path: "/about",
       name: "AboutPage",
       component: AboutView,
+    },
+    {
+      path: "/contacts",
+      name: "ContactsPage",
+      component: ContactPage,
     },
   ],
 });

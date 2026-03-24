@@ -29,7 +29,9 @@
 
       <div class="bottom">
         <h2 class="price">{{ product?.price }} ₽</h2>
-        <app-button class="btn">Оставить заявку</app-button>
+        <app-button class="btn" @click="$router.push({ name: 'ContactsPage' })"
+          >Оставить заявку</app-button
+        >
       </div>
     </div>
   </div>
