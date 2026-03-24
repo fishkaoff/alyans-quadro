@@ -48,12 +48,12 @@
       <div class="wrapper">
         <p class="item">© 2026 Альянс Квадро. Все права защищены.</p>
         <div>
-          <router-link class="item" :to="{}"
+          <router-link class="item" :to="{ name: 'PrivacyPolicy' }"
             >Политика конфиденциальности</router-link
           >
         </div>
         <div>
-          <router-link class="item" :to="{}"
+          <router-link class="item" :to="{ name: 'UserAgreement' }"
             >Пользовательское соглашение</router-link
           >
         </div>

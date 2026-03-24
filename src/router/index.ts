@@ -1,5 +1,7 @@
 import AboutView from "@/views/about/AboutView.vue";
 import ContactPage from "@/views/contact/ContactPage.vue";
+import PrivacyPolicy from "@/views/documents/PrivacyPolicy.vue";
+import UserAgreement from "@/views/documents/UserAgreement.vue";
 import HomePage from "@/views/home/HomePage.vue";
 import CatalogPage from "@/views/product/CatalogPage.vue";
 import ProductPage from "@/views/product/ProductPage.vue";
@@ -32,6 +34,16 @@ const router = createRouter({
       path: "/contacts",
       name: "ContactsPage",
       component: ContactPage,
+    },
+    {
+      path: "/privacy-policy",
+      name: "PrivacyPolicy",
+      component: PrivacyPolicy,
+    },
+    {
+      path: "/user-agreement",
+      name: "UserAgreement",
+      component: UserAgreement,
     },
   ],
 });
