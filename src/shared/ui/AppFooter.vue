@@ -26,7 +26,7 @@
             <router-link :to="{ name: 'AboutPage' }">О компании</router-link>
           </h3>
           <h3 class="col-item">
-            <router-link :to="{ name: 'ContactsPage' }">Контакты</router-link>
+            <router-link :to="{ name: 'Requisites' }">Реквизиты</router-link>
           </h3>
         </div>
         <div class="col">

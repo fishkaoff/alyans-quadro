@@ -1,6 +1,9 @@
 import AboutView from "@/views/about/AboutView.vue";
 import ContactPage from "@/views/contact/ContactPage.vue";
+import Cookies from "@/views/documents/Cookies.vue";
+import PdAgreement from "@/views/documents/PdAgreement.vue";
 import PrivacyPolicy from "@/views/documents/PrivacyPolicy.vue";
+import Requisites from "@/views/documents/Requisites.vue";
 import UserAgreement from "@/views/documents/UserAgreement.vue";
 import HomePage from "@/views/home/HomePage.vue";
 import CatalogPage from "@/views/product/CatalogPage.vue";
@@ -44,6 +47,21 @@ const router = createRouter({
       path: "/user-agreement",
       name: "UserAgreement",
       component: UserAgreement,
+    },
+    {
+      path: "/pd-agreement",
+      name: "PDAgreement",
+      component: PdAgreement,
+    },
+    {
+      path: "/cookies",
+      name: "Cookies",
+      component: Cookies,
+    },
+    {
+      path: "/requisites",
+      name: "Requisites",
+      component: Requisites,
     },
   ],
 });

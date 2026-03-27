@@ -66,7 +66,11 @@
               <button class="form-btn" type="submit">Отправить</button>
 
               <p class="remark">
-                Нажимая кнопку "Отправить" вы соглашаетесь с
+                Нажимая кнопку "Отправить" я
+                <router-link :to="{ name: 'PDAgreement' }" class="link">
+                  даю согласие на обработку персональных данных</router-link
+                >
+                в соответствии с
                 <router-link :to="{ name: 'PrivacyPolicy' }" class="link"
                   >политикой конфиденциальности</router-link
                 >
