@@ -5,7 +5,7 @@
     </div>
 
     <div class="text-container">
-      <h1 class="title">{{ product?.brand }}</h1>
+      <h1 class="title">{{ product?.model }}</h1>
       <p class="description">
         Спортивный квадроцикл с агрессивным характером. Идеален для тех, кто
         ищет максимум адреналина на любой трассе. Лёгкая рама и мощный двигатель

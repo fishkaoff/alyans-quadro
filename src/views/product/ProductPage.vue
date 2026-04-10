@@ -14,10 +14,6 @@
               <p class="spec-value">{{ product?.brand }}</p>
             </div>
             <div class="row">
-              <p class="spec-name">Год</p>
-              <p class="spec-value">{{ product?.year }}</p>
-            </div>
-            <div class="row">
               <p class="spec-name">Объем двигателя</p>
               <p class="spec-value">{{ product?.engineVolume }} см³</p>
             </div>
@@ -64,20 +60,12 @@
               <p class="spec-value">{{ product?.fuelTankVolume }} л</p>
             </div>
             <div class="row">
-              <p class="spec-name">Материал бака</p>
-              <p class="spec-value">{{ product?.fuelTankMaterial }}</p>
-            </div>
-            <div class="row">
               <p class="spec-name">Вес</p>
               <p class="spec-value">{{ product?.dryWeight }} кг</p>
             </div>
             <div class="row">
               <p class="spec-name">Клиренс</p>
               <p class="spec-value">{{ product?.groundClearance }}</p>
-            </div>
-            <div class="row">
-              <p class="spec-name">Тип колес</p>
-              <p class="spec-value">{{ product?.wheelType }}</p>
             </div>
             <div class="row">
               <p class="spec-name">Передняя подвеска</p>
@@ -87,18 +75,10 @@
               <p class="spec-name">Задняя подвеска</p>
               <p class="spec-value">{{ product?.rearSuspensionType }}</p>
             </div>
-            <div class="row">
-              <p class="spec-name">Тормозной шланг</p>
-              <p class="spec-value">{{ product?.frontBrakeHose }}</p>
-            </div>
           </div>
 
           <!-- Колонка 3 — Оснащение -->
           <div class="col">
-            <div class="row">
-              <p class="spec-name">Фара</p>
-              <p class="spec-value">{{ product?.headlight }}</p>
-            </div>
             <div class="row">
               <p class="spec-name">Зеркала</p>
               <p class="spec-value">{{ product?.mirrors }}</p>
@@ -128,16 +108,8 @@
               <p class="spec-value">{{ product?.reversGear }}</p>
             </div>
             <div class="row">
-              <p class="spec-name">Цена</p>
-              <p class="spec-value">{{ product?.price }}</p>
-            </div>
-            <div class="row">
-              <p class="spec-name">SKU</p>
+              <p class="spec-name">Артикул</p>
               <p class="spec-value">{{ product?.sku }}</p>
-            </div>
-            <div class="row">
-              <p class="spec-name">Артикул производителя</p>
-              <p class="spec-value">{{ product?.manufacturer_sku }}</p>
             </div>
           </div>
         </div>

@@ -25,8 +25,8 @@
         <h2 class="filter-name">Объем двигателя (минимум)</h2>
         <div class="selector">
           <range-slider
-            :min="150"
-            :max="300"
+            :min="30"
+            :max="400"
             v-model="engineVolume"
             class="range-slider"
           />
@@ -37,7 +37,7 @@
       <div class="filter-group">
         <h2 class="filter-name">Мощность (л.c)</h2>
         <div class="selector">
-          <range-slider :min="7" :max="50" v-model="hp" class="range-slider" />
+          <range-slider :min="1" :max="50" v-model="hp" class="range-slider" />
           <p class="value">{{ hp }}</p>
         </div>
       </div>
@@ -46,7 +46,7 @@
         <h2 class="filter-name">Цена (максимум)</h2>
         <div class="selector">
           <range-slider
-            :min="60000"
+            :min="50000"
             :max="2000000"
             v-model="price"
             class="range-slider"
@@ -74,9 +74,8 @@ const emit = defineEmits([
 const categoriesStore = useCategoriesStore();
 
 const activeCategory = ref("");
-const engineVolume = ref(300);
-const hp = ref(20);
-const maxSpeed = ref(70);
+const engineVolume = ref(30);
+const hp = ref(1);
 const price = ref(170000);
 
 const updateActiveCategory = (id: string) => {

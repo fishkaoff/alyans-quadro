@@ -5,10 +5,10 @@
     </div>
     <div class="content">
       <p class="slogan">{{ model.sku }}</p>
-      <h1 class="name">{{ model.brand }}</h1>
+      <h1 class="name">{{ model.model }}</h1>
       <p class="spec">
         {{ model.enginePower }} л.с • {{ model.engineVolume }} cc •
-        {{ model.year }} г.
+        {{ model.dryWeight }} кг.
       </p>
 
       <div class="bottom">

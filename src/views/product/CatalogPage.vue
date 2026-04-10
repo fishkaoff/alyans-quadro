@@ -32,8 +32,8 @@ import ModelsList from "@/components/products/ModelsList.vue";
 import { ref } from "vue";
 
 const category = ref("");
-const engineVolume = ref(150);
-const hp = ref(7);
+const engineVolume = ref(30);
+const hp = ref(1);
 const price = ref(2000000);
 </script>
 

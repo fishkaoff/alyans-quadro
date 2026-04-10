@@ -1,623 +1,878 @@
 import type { Product } from "../types/products";
 
+// Взрослые квадрики - 0ebe26bf-3790-40ca-bf73-c6edf58ca3fe
+// Питбайки и эндуро - 31fd2074-397f-4f39-9b44-cd7a25f4f11e
+// Детские квадрики - 31fd2074-397f-4f39-9b44-cd7a65f4f11e
+//
+
 export const atvList: Product[] = [
   {
     id: "atv-001",
     categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
-    sku: "AV-QUAD-125-BLK",
-    manufacturer_sku: "AV125BLK2025",
+
+    sku: "УТ-00009388",
+    available: 1,
+
     brand: "Avantis",
-    engineVolume: 125,
-    enginePower: 9.8,
-    fuelType: "АИ-92",
-    fuelSystem: "carburetor",
-    coolingType: "air",
-    ignitionType: "CDI",
-    fuelTankVolume: 3.5,
-    fuelTankMaterial: "metal",
-    starterType: "electric",
-    transmissionType: "automatic",
-    dryWeight: 145,
-    headlight: "LED",
-    year: 2025,
+    model: "Avantis Veron Max 400 EFI",
+
+    // Объем двигателя
+    engineVolume: 400,
+    // Мощность двигателя (лс)
+    enginePower: 26,
+    // Бензин
+    fuelType: "Бензин",
+    // система подачи топлива
+    fuelSystem: "Не указано",
+    // охлаждение двигателя
+    coolingType: "Жидкостное",
+    // тип зажигания
+    ignitionType: "EFI",
+    // Объем бака
+    fuelTankVolume: 9,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "CVT (С понижающей передачей)",
+
+    // чистый вес
+    dryWeight: 0,
+
     images: [
-      "https://avantis.club/xml/in/goods/import_files/4a/4aa73513-2f45-11f0-acd5-005056a46a53_f7a59082-72c2-11f0-acd6-005056a46a53.png",
+      "https://www.avantsb.ru/upload/resize_cache/iblock/c80/900_675_151b11314a364b80d54ce90229ae6ccd6/075rixl3imo975vc31bstr8h81rcmdi8.jpg",
     ],
-    rearTrunk: "yes",
-    frontTrunk: "yes",
-    handProtection: "yes",
-    reversGear: "yes",
-    wheelType: "steel stamped",
-    mirrors: "yes",
-    horn: "yes",
-    heatedGrips: "yes",
-    frontSuspensionType: "independent double wishbone",
-    rearSuspensionType: "swingarm with mono shock",
-    frontBrakeHose: "reinforced",
-    groundClearance: "105 mm",
-    price: 250000,
+
+    // багажники
+    rearTrunk: "Не указано",
+    frontTrunk: "Не указано",
+
+    // защита рук
+    handProtection: "Есть",
+    // задняя передача
+    reversGear: "есть",
+    // зеркала
+    mirrors: "есть",
+    // гудок
+    horn: "есть",
+
+    // обогрев ручек
+    heatedGrips: "Не указано",
+
+    // передняя подвеска
+    frontSuspensionType: "Многорычажная независимая на шаровых опорах",
+    // задняя подвеска
+    rearSuspensionType: "",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 470000,
   },
   {
     id: "atv-002",
     categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
-    sku: "CF-MOTO-CFOR500",
-    manufacturer_sku: "CF500-4X4",
-    brand: "CF Moto",
-    engineVolume: 500,
-    enginePower: 38.5,
-    fuelType: "АИ-95",
-    fuelSystem: "injector",
-    coolingType: "liquid",
-    ignitionType: "ECU",
-    fuelTankVolume: 17.5,
-    fuelTankMaterial: "plastic",
-    starterType: "electric",
-    transmissionType: "automatic",
-    dryWeight: 325,
-    headlight: "LED",
-    year: 2024,
+
+    sku: "УТ-00008214",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл Avantis Forester Long 200",
+
+    // Объем двигателя
+    engineVolume: 200,
+    // Мощность двигателя (лс)
+    enginePower: 16,
+    // Бензин
+    fuelType: "АИ-92",
+    // система подачи топлива
+    fuelSystem: "Карбюратор",
+    // охлаждение двигателя
+    coolingType: "Жидкостное",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 9,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Ременной вариатор с реверсом",
+
+    // чистый вес
+    dryWeight: 187,
+
     images: [
-      "https://avantis.club/xml/in/goods/import_files/4a/4aa73513-2f45-11f0-acd5-005056a46a53_f7a59082-72c2-11f0-acd6-005056a46a53.png",
+      "https://www.avantsb.ru/upload/resize_cache/iblock/c01/900_675_151b11314a364b80d54ce90229ae6ccd6/dzu08ac9bbv0oh9toubnz5vb78abc2on.png",
     ],
-    rearTrunk: "yes",
-    frontTrunk: "no",
-    handProtection: "yes",
-    reversGear: "yes",
-    wheelType: "alloy",
-    mirrors: "yes",
-    horn: "yes",
-    heatedGrips: "no",
-    frontSuspensionType: "double A-arm",
-    rearSuspensionType: "double A-arm",
-    frontBrakeHose: "reinforced",
-    groundClearance: "275 mm",
-    price: 250000,
+
+    // багажники
+    rearTrunk: "Есть",
+    frontTrunk: "Есть",
+
+    // защита рук
+    handProtection: "Есть",
+    // задняя передача
+    reversGear: "Есть",
+    // зеркала
+    mirrors: "Нет",
+    // гудок
+    horn: "Есть",
+
+    // обогрев ручек
+    heatedGrips: "Нет",
+
+    // передняя подвеска
+    frontSuspensionType: "На шаровых опорах с тавотницами",
+    // задняя подвеска
+    rearSuspensionType: "",
+
+    // дорожный просвет
+    groundClearance: "170 мм",
+    price: 209450,
   },
   {
     id: "atv-003",
     categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
-    sku: "YAMAHA-GRIZZLY700",
-    manufacturer_sku: "YGR700EPS",
-    brand: "Yamaha",
-    engineVolume: 686,
-    enginePower: 48.2,
-    fuelType: "АИ-95",
-    fuelSystem: "injector",
-    coolingType: "liquid",
-    ignitionType: "TCI",
-    fuelTankVolume: 15.5,
-    fuelTankMaterial: "plastic",
-    starterType: "electric",
-    transmissionType: "automatic",
-    dryWeight: 298,
-    headlight: "halogen",
-    year: 2023,
+
+    sku: "УТ-00008038",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл Avantis Hunter 250 BIG NEW",
+
+    // Объем двигателя
+    engineVolume: 250,
+    // Мощность двигателя (лс)
+    enginePower: 19,
+    // Бензин
+    fuelType: "АИ-92",
+    // система подачи топлива
+    fuelSystem: "Карбюратор",
+    // охлаждение двигателя
+    coolingType: "Жидкостное",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 4.7,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Ременной вариатор с реверсом",
+
+    // чистый вес
+    dryWeight: 0,
+
     images: [
-      "https://avantis.club/xml/in/goods/import_files/4a/4aa73513-2f45-11f0-acd5-005056a46a53_f7a59082-72c2-11f0-acd6-005056a46a53.png",
+      "https://www.avantsb.ru/upload/resize_cache/iblock/370/900_675_151b11314a364b80d54ce90229ae6ccd6/otx7vh9iv6shvez73hxo4wvi9itiv5mn.jpg",
     ],
-    rearTrunk: "yes",
-    frontTrunk: "yes",
-    handProtection: "yes",
-    reversGear: "yes",
-    wheelType: "steel",
-    mirrors: "yes",
-    horn: "yes",
-    heatedGrips: "yes",
-    frontSuspensionType: "independent double wishbone",
-    rearSuspensionType: "independent double wishbone",
-    frontBrakeHose: "reinforced",
-    groundClearance: "255 mm",
-    price: 250000,
+
+    // багажники
+    rearTrunk: "Есть",
+    frontTrunk: "Есть",
+
+    // защита рук
+    handProtection: "Есть",
+    // задняя передача
+    reversGear: "Есть",
+    // зеркала
+    mirrors: "Нет",
+    // гудок
+    horn: "Есть",
+
+    // обогрев ручек
+    heatedGrips: "Не указано",
+
+    // передняя подвеска
+    frontSuspensionType: "Не указано",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 260800,
   },
   {
     id: "atv-004",
     categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
-    sku: "POLARIS-SPORTSMAN570",
-    manufacturer_sku: "PS570EP",
-    brand: "Polaris",
-    engineVolume: 567,
-    enginePower: 44.0,
-    fuelType: "АИ-92",
-    fuelSystem: "injector",
-    coolingType: "liquid",
-    ignitionType: "ECU",
-    fuelTankVolume: 17.0,
-    fuelTankMaterial: "plastic",
-    starterType: "electric",
-    transmissionType: "automatic",
-    dryWeight: 315,
-    headlight: "LED",
-    year: 2024,
+
+    sku: "УТ-00007457",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл Avantis AURA 200",
+
+    // Объем двигателя
+    engineVolume: 200,
+    // Мощность двигателя (лс)
+    enginePower: 16.5,
+    // Бензин
+    fuelType: "Бензин",
+    // система подачи топлива
+    fuelSystem: "Карбюратор",
+    // охлаждение двигателя
+    coolingType: "Жидкостное",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 5,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Ременной вариатор с реверсом",
+
+    // чистый вес
+    dryWeight: 0,
+
     images: [
-      "https://avantis.club/xml/in/goods/import_files/4a/4aa73513-2f45-11f0-acd5-005056a46a53_f7a59082-72c2-11f0-acd6-005056a46a53.png",
+      "https://www.avantsb.ru/upload/resize_cache/iblock/6b5/1024_1024_151b11314a364b80d54ce90229ae6ccd6/l113csneoifjkacqbws6a19k6zlyc910.png",
     ],
-    rearTrunk: "yes",
-    frontTrunk: "yes",
-    handProtection: "yes",
-    reversGear: "yes",
-    wheelType: "alloy",
-    mirrors: "no",
-    horn: "yes",
-    heatedGrips: "optional",
-    frontSuspensionType: "MacPherson strut",
-    rearSuspensionType: "independent",
-    frontBrakeHose: "standard",
-    groundClearance: "280 mm",
-    price: 250000,
+
+    // багажники
+    rearTrunk: "Есть",
+    frontTrunk: "Есть",
+
+    // защита рук
+    handProtection: "Есть",
+    // задняя передача
+    reversGear: "Есть",
+    // зеркала
+    mirrors: "Есть",
+    // гудок
+    horn: "Не указано",
+
+    // обогрев ручек
+    heatedGrips: "Не указано",
+
+    // передняя подвеска
+    frontSuspensionType: "Не указано",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 99900,
   },
   {
     id: "atv-005",
     categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
-    sku: "CANAM-OUTLANDER650",
-    manufacturer_sku: "CMO650XMR",
-    brand: "Can-Am",
-    engineVolume: 650,
-    enginePower: 62.0,
-    fuelType: "АИ-98",
-    fuelSystem: "injector",
-    coolingType: "liquid",
-    ignitionType: "ECU",
-    fuelTankVolume: 20.5,
-    fuelTankMaterial: "plastic",
-    starterType: "electric",
-    transmissionType: "automatic",
-    dryWeight: 349,
-    headlight: "LED matrix",
-    year: 2025,
+
+    sku: "УТ-00005090",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл Avantis Forester Long 200",
+
+    // Объем двигателя
+    engineVolume: 200,
+    // Мощность двигателя (лс)
+    enginePower: 16,
+    // Бензин
+    fuelType: "АИ-92",
+    // система подачи топлива
+    fuelSystem: "Карбюратор DENI (ЯПОНИЯ)",
+    // охлаждение двигателя
+    coolingType: "Жидкостное",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 9,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Вариатор с реверсом",
+
+    // чистый вес
+    dryWeight: 0,
+
     images: [
-      "https://avantis.club/xml/in/goods/import_files/4a/4aa73513-2f45-11f0-acd5-005056a46a53_f7a59082-72c2-11f0-acd6-005056a46a53.png",
+      "https://www.avantsb.ru/upload/resize_cache/iblock/f6c/1024_1024_151b11314a364b80d54ce90229ae6ccd6/ulih5mhp1z61yc7raggaojvpctzyqi9r.png",
     ],
-    rearTrunk: "yes",
-    frontTrunk: "no",
-    handProtection: "yes",
-    reversGear: "yes",
-    wheelType: "aluminum",
-    mirrors: "yes",
-    horn: "yes",
-    heatedGrips: "yes",
-    frontSuspensionType: "double A-arm with sway bar",
-    rearSuspensionType: "torsional independent",
-    frontBrakeHose: "reinforced",
-    groundClearance: "300 mm",
-    price: 250000,
+
+    // багажники
+    rearTrunk: "Есть",
+    frontTrunk: "Есть",
+
+    // защита рук
+    handProtection: "Есть",
+    // задняя передача
+    reversGear: "Есть",
+    // зеркала
+    mirrors: "Есть",
+    // гудок
+    horn: "Есть",
+
+    // обогрев ручек
+    heatedGrips: "Есть",
+
+    // передняя подвеска
+    frontSuspensionType: "Не указано",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 244050,
   },
   {
     id: "atv-006",
     categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
-    sku: "STELS-ATV650-GUEPARD",
-    manufacturer_sku: "ST650G",
-    brand: "Stels",
-    engineVolume: 650,
-    enginePower: 42.0,
+
+    sku: "УТ-00005089",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл Avantis Forester Long 200",
+
+    // Объем двигателя
+    engineVolume: 200,
+    // Мощность двигателя (лс)
+    enginePower: 16,
+    // Бензин
     fuelType: "АИ-92",
-    fuelSystem: "carburetor",
-    coolingType: "liquid",
-    ignitionType: "CDI",
-    fuelTankVolume: 14.0,
-    fuelTankMaterial: "plastic",
-    starterType: "electric",
-    transmissionType: "automatic",
-    dryWeight: 280,
-    headlight: "halogen",
-    year: 2023,
+    // система подачи топлива
+    fuelSystem: "Карбюратор DENI (ЯПОНИЯ)",
+    // охлаждение двигателя
+    coolingType: "Жидкостное",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 9,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Вариатор с реверсом",
+
+    // чистый вес
+    dryWeight: 0,
+
     images: [
-      "https://avantis.club/xml/in/goods/import_files/4a/4aa73513-2f45-11f0-acd5-005056a46a53_f7a59082-72c2-11f0-acd6-005056a46a53.png",
+      "https://www.avantsb.ru/upload/resize_cache/iblock/4ab/1024_1024_151b11314a364b80d54ce90229ae6ccd6/3a4gp1p99hm58302ox97tmrdm190c5xs.png",
     ],
-    rearTrunk: "yes",
-    frontTrunk: "yes",
-    handProtection: "yes",
-    reversGear: "yes",
-    wheelType: "steel",
-    mirrors: "yes",
-    horn: "yes",
-    heatedGrips: "no",
-    frontSuspensionType: "independent",
-    rearSuspensionType: "swingarm",
-    frontBrakeHose: "standard",
-    groundClearance: "240 mm",
-    price: 250000,
+
+    // багажники
+    rearTrunk: "Есть",
+    frontTrunk: "Есть",
+
+    // защита рук
+    handProtection: "Есть",
+    // задняя передача
+    reversGear: "Есть",
+    // зеркала
+    mirrors: "Нет",
+    // гудок
+    horn: "Есть",
+
+    // обогрев ручек
+    heatedGrips: "Есть",
+
+    // передняя подвеска
+    frontSuspensionType: "Не указано",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 238700,
   },
   {
     id: "atv-007",
     categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
-    sku: "IRBIS-ATV300L",
-    manufacturer_sku: "IRB300L",
-    brand: "Irbis",
-    engineVolume: 300,
-    enginePower: 18.5,
+
+    sku: "УТ-00006593",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл Avantis Ray 200",
+
+    // Объем двигателя
+    engineVolume: 200,
+    // Мощность двигателя (лс)
+    enginePower: 16,
+    // Бензин
     fuelType: "АИ-92",
-    fuelSystem: "carburetor",
-    coolingType: "air",
-    ignitionType: "CDI",
-    fuelTankVolume: 7.5,
-    fuelTankMaterial: "metal",
-    starterType: "electric",
-    transmissionType: "automatic",
-    dryWeight: 190,
-    headlight: "LED",
-    year: 2024,
+    // система подачи топлива
+    fuelSystem: "Карбюратор DENI (ЯПОНИЯ)",
+    // охлаждение двигателя
+    coolingType: "Жидкостное",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 8.5,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Не указано",
+
+    // чистый вес
+    dryWeight: 0,
+
     images: [
-      "https://avantis.club/xml/in/goods/import_files/4a/4aa73513-2f45-11f0-acd5-005056a46a53_f7a59082-72c2-11f0-acd6-005056a46a53.png",
+      "https://www.avantsb.ru/upload/resize_cache/iblock/3bc/1024_1024_151b11314a364b80d54ce90229ae6ccd6/6mm63okusp17t8wsjzlicsm3ax3s741y.jpg",
     ],
-    rearTrunk: "yes",
-    frontTrunk: "no",
-    handProtection: "yes",
-    reversGear: "yes",
-    wheelType: "steel",
-    mirrors: "yes",
-    horn: "yes",
-    heatedGrips: "no",
-    frontSuspensionType: "double wishbone",
-    rearSuspensionType: "monoshock",
-    frontBrakeHose: "standard",
-    groundClearance: "200 mm",
-    price: 250000,
+
+    // багажники
+    rearTrunk: "Не указано",
+    frontTrunk: "Не указано",
+
+    // защита рук
+    handProtection: "Не указано",
+    // задняя передача
+    reversGear: "Не указано",
+    // зеркала
+    mirrors: "Нет",
+    // гудок
+    horn: "Не указано",
+
+    // обогрев ручек
+    heatedGrips: "Не указано",
+
+    // передняя подвеска
+    frontSuspensionType: "Пружинная гидравлическая с регулировкой",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 90000,
   },
   {
     id: "atv-008",
     categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
-    sku: "KAWASAKI-BRUCE250",
-    manufacturer_sku: "KBF250",
-    brand: "Kawasaki",
-    engineVolume: 250,
-    enginePower: 18.0,
+
+    sku: "УТ-00007310",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл Avantis Hunter200 NEW BIG",
+
+    // Объем двигателя
+    engineVolume: 200,
+    // Мощность двигателя (лс)
+    enginePower: 16,
+    // Бензин
     fuelType: "АИ-92",
-    fuelSystem: "carburetor",
-    coolingType: "air",
-    ignitionType: "CDI",
-    fuelTankVolume: 10.5,
-    fuelTankMaterial: "metal",
-    starterType: "electric",
-    transmissionType: "automatic",
-    dryWeight: 175,
-    headlight: "halogen",
-    year: 2022,
+    // система подачи топлива
+    fuelSystem: "Карбюратор",
+    // охлаждение двигателя
+    coolingType: "Не указано",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 9,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Автоматическая (центробежное сцепление)",
+
+    // чистый вес
+    dryWeight: 0,
+
     images: [
-      "https://avantis.club/xml/in/goods/import_files/4a/4aa73513-2f45-11f0-acd5-005056a46a53_f7a59082-72c2-11f0-acd6-005056a46a53.png",
+      "https://www.avantsb.ru/upload/resize_cache/iblock/2c9/900_675_151b11314a364b80d54ce90229ae6ccd6/ag6weqtykvhcvc0jk05qajm0nklwyc28.jpg",
     ],
-    rearTrunk: "yes",
-    frontTrunk: "yes",
-    handProtection: "yes",
-    reversGear: "yes",
-    wheelType: "steel",
-    mirrors: "yes",
-    horn: "yes",
-    heatedGrips: "yes",
-    frontSuspensionType: "independent",
-    rearSuspensionType: "swingarm",
-    frontBrakeHose: "reinforced",
-    groundClearance: "180 mm",
-    price: 250000,
+
+    // багажники
+    rearTrunk: "Не указано",
+    frontTrunk: "Не указано",
+
+    // защита рук
+    handProtection: "Не указано",
+    // задняя передача
+    reversGear: "Не указано",
+    // зеркала
+    mirrors: "Есть",
+    // гудок
+    horn: "Не указано",
+
+    // обогрев ручек
+    heatedGrips: "Не указано",
+
+    // передняя подвеска
+    frontSuspensionType: "Пружинная гидравлическая с регулировкой",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 255500,
   },
   {
     id: "atv-009",
     categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
-    sku: "HONDA-TRX420",
-    manufacturer_sku: "H420FA",
-    brand: "Honda",
-    engineVolume: 420,
-    enginePower: 32.5,
-    fuelType: "АИ-95",
-    fuelSystem: "injector",
-    coolingType: "liquid",
-    ignitionType: "ECU",
-    fuelTankVolume: 13.2,
-    fuelTankMaterial: "plastic",
-    starterType: "electric",
-    transmissionType: "automatic",
-    dryWeight: 245,
-    headlight: "LED",
-    year: 2024,
+
+    sku: "УТ-00009239",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл H250 BIG NEW",
+
+    // Объем двигателя
+    engineVolume: 250,
+    // Мощность двигателя (лс)
+    enginePower: 0,
+    // Бензин
+    fuelType: "Не указано",
+    // система подачи топлива
+    fuelSystem: "Не указано",
+    // охлаждение двигателя
+    coolingType: "Не указано",
+    // тип зажигания
+    ignitionType: "Не указано",
+    // Объем бака
+    fuelTankVolume: 0,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Не указано",
+
+    // чистый вес
+    dryWeight: 0,
+
     images: [
-      "https://avantis.club/xml/in/goods/import_files/4a/4aa73513-2f45-11f0-acd5-005056a46a53_f7a59082-72c2-11f0-acd6-005056a46a53.png",
+      "https://www.avantsb.ru/upload/resize_cache/iblock/2e4/900_675_151b11314a364b80d54ce90229ae6ccd6/tkja7k20ngv6ifzrzfetitxiw3q1xqo6.jpg",
     ],
-    rearTrunk: "yes",
-    frontTrunk: "yes",
-    handProtection: "yes",
-    reversGear: "yes",
-    wheelType: "alloy",
-    mirrors: "yes",
-    horn: "yes",
-    heatedGrips: "no",
-    frontSuspensionType: "double wishbone",
-    rearSuspensionType: "swingarm",
-    frontBrakeHose: "reinforced",
-    groundClearance: "230 mm",
-    price: 250000,
+
+    // багажники
+    rearTrunk: "Не указано",
+    frontTrunk: "Не указано",
+
+    // защита рук
+    handProtection: "Не указано",
+    // задняя передача
+    reversGear: "Не указано",
+    // зеркала
+    mirrors: "Не указано",
+    // гудок
+    horn: "Не указано",
+
+    // обогрев ручек
+    heatedGrips: "Не указано",
+
+    // передняя подвеска
+    frontSuspensionType: "Не указано",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 278600,
   },
   {
     id: "atv-010",
     categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
-    sku: "MOTAX-ATV-200",
-    manufacturer_sku: "MTX200-2WD",
-    brand: "Motax",
+
+    sku: "УТ-00006530",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл R-moto Lion 200Х",
+
+    // Объем двигателя
     engineVolume: 200,
-    enginePower: 13.5,
+    // Мощность двигателя (лс)
+    enginePower: 17,
+    // Бензин
     fuelType: "АИ-92",
-    fuelSystem: "carburetor",
-    coolingType: "air",
-    ignitionType: "CDI",
-    fuelTankVolume: 6.0,
-    fuelTankMaterial: "metal",
-    starterType: "electric",
-    transmissionType: "automatic",
-    dryWeight: 165,
-    headlight: "LED",
-    year: 2025,
+    // система подачи топлива
+    fuelSystem: "Карбюратор DENI (ЯПОНИЯ)",
+    // охлаждение двигателя
+    coolingType: "Воздушное",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 6.5,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Вариатор F-N-R",
+
+    // чистый вес
+    dryWeight: 0,
+
     images: [
-      "https://avantis.club/xml/in/goods/import_files/4a/4aa73513-2f45-11f0-acd5-005056a46a53_f7a59082-72c2-11f0-acd6-005056a46a53.png",
+      "https://www.avantsb.ru/upload/resize_cache/iblock/660/1024_1024_151b11314a364b80d54ce90229ae6ccd6/ownw8axbhc8o3h4mh0slzogd4s3g7tes.png",
     ],
-    rearTrunk: "yes",
-    frontTrunk: "yes",
-    handProtection: "yes",
-    reversGear: "yes",
-    wheelType: "steel",
-    mirrors: "yes",
-    horn: "yes",
-    heatedGrips: "no",
-    frontSuspensionType: "independent",
-    rearSuspensionType: "monoshock",
-    frontBrakeHose: "standard",
-    groundClearance: "160 mm",
-    price: 250000,
+
+    // багажники
+    rearTrunk: "Есть",
+    frontTrunk: "Есть",
+
+    // защита рук
+    handProtection: "Есть",
+    // задняя передача
+    reversGear: "Нет",
+    // зеркала
+    mirrors: "Есть",
+    // гудок
+    horn: "Не указано",
+
+    // обогрев ручек
+    heatedGrips: "Не указано",
+
+    // передняя подвеска
+    frontSuspensionType: "2-х рычажная, шаровая с 2-мя амортизаторами",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 209990,
+  },
+  {
+    id: "atv-011",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
+
+    sku: "УТ-00004898",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл WELS Thunder Trail 200",
+
+    // Объем двигателя
+    engineVolume: 200,
+    // Мощность двигателя (лс)
+    enginePower: 16.5,
+    // Бензин
+    fuelType: "Бензин",
+    // система подачи топлива
+    fuelSystem: "Карбюратор DENI (ЯПОНИЯ)",
+    // охлаждение двигателя
+    coolingType: "Жидкостное",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 6.5,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Вариатор",
+
+    // чистый вес
+    dryWeight: 175,
+
+    images: [
+      "https://www.avantsb.ru/upload/resize_cache/iblock/6b2/872_617_151b11314a364b80d54ce90229ae6ccd6/r78msw3q6c61oxxh9pdn253hblq7wamf.jpg",
+    ],
+
+    // багажники
+    rearTrunk: "Не указано",
+    frontTrunk: "Не указано",
+
+    // защита рук
+    handProtection: "Не указано",
+    // задняя передача
+    reversGear: "Нет",
+    // зеркала
+    mirrors: "Есть",
+    // гудок
+    horn: "Не указано",
+
+    // обогрев ручек
+    heatedGrips: "Есть",
+
+    // передняя подвеска
+    frontSuspensionType:
+      "Независимая 2-х рычажная, на шаровых опорах с 2-я амортизаторами",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 266990,
+  },
+  {
+    id: "atv-012",
+    categoryId: "0ebe26bf-3790-40ca-bf73-c6edf58ca3fe",
+
+    sku: "УТ-00000712",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл R-moto Lion 200LD",
+
+    // Объем двигателя
+    engineVolume: 200,
+    // Мощность двигателя (лс)
+    enginePower: 17,
+    // Бензин
+    fuelType: "АИ-92",
+    // система подачи топлива
+    fuelSystem: "Карбюратор DENI (ЯПОНИЯ)",
+    // охлаждение двигателя
+    coolingType: "Воздушное",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 0,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Вариатор",
+
+    // чистый вес
+    dryWeight: 160,
+
+    images: [
+      "https://www.avantsb.ru/upload/resize_cache/iblock/0d6/1024_1024_151b11314a364b80d54ce90229ae6ccd6/t9nmcc1bms1f5sjvncqgxk52pbsjntht.png",
+    ],
+
+    // багажники
+    rearTrunk: "Есть",
+    frontTrunk: "Есть",
+
+    // защита рук
+    handProtection: "Есть",
+    // задняя передача
+    reversGear: "Нет",
+    // зеркала
+    mirrors: "Есть",
+    // гудок
+    horn: "Не указано",
+
+    // обогрев ручек
+    heatedGrips: "Не указано",
+
+    // передняя подвеска
+    frontSuspensionType: "2-х рычажная, шаровая с 2-мя амортизаторами",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 99990,
+  },
+  {
+    id: "atv-013",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a65f4f11e",
+
+    sku: "УТ-00001566",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Детский квадроцикл ATV Classic mini 4T",
+
+    // Объем двигателя
+    engineVolume: 50,
+    // Мощность двигателя (лс)
+    enginePower: 3.4,
+    // Бензин
+    fuelType: "АИ-92",
+    // система подачи топлива
+    fuelSystem: "Карбюратор DENI (ЯПОНИЯ)",
+    // охлаждение двигателя
+    coolingType: "Воздушное",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 2.5,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Автоматическое центробежное сцепление без реверса",
+
+    // чистый вес
+    dryWeight: 48,
+
+    images: [
+      "https://www.avantsb.ru/upload/resize_cache/iblock/dde/1024_1024_151b11314a364b80d54ce90229ae6ccd6/1mk8o335a8zqjj9izffusa4ntskrpllb.jpeg",
+    ],
+
+    // багажники
+    rearTrunk: "Есть",
+    frontTrunk: "Есть",
+
+    // защита рук
+    handProtection: "Не указано",
+    // задняя передача
+    reversGear: "Нет",
+    // зеркала
+    mirrors: "Нет",
+    // гудок
+    horn: "Не указано",
+
+    // обогрев ручек
+    heatedGrips: "Не указано",
+
+    // передняя подвеска
+    frontSuspensionType: "2-х рычажная, шаровая с 2-мя амортизаторами",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "120 мм",
+    price: 64900,
+  },
+  {
+    id: "atv-014",
+    categoryId: "31fd2074-397f-4f39-9b44-cd7a65f4f11e",
+
+    sku: "00000035372",
+    available: 1,
+
+    brand: "Avantis",
+    model: "Квадроцикл Yacota 45",
+
+    // Объем двигателя
+    engineVolume: 45,
+    // Мощность двигателя (лс)
+    enginePower: 2.5,
+    // Бензин
+    fuelType: "АИ-92",
+    // система подачи топлива
+    fuelSystem: "Карбюратор DENI (ЯПОНИЯ)",
+    // охлаждение двигателя
+    coolingType: "Воздушное",
+    // тип зажигания
+    ignitionType: "Электронное (C.D.I)",
+    // Объем бака
+    fuelTankVolume: 1,
+
+    // тип стартера
+    starterType: "Не указано",
+    // коробка
+    transmissionType: "Автоматическая (центробежное сцепление)",
+
+    // чистый вес
+    dryWeight: 0,
+
+    images: [
+      "https://www.avantsb.ru/upload/resize_cache/iblock/31a/800_600_151b11314a364b80d54ce90229ae6ccd6/b40fugsj6svfq57zt110cr872uygomq4.jpg",
+    ],
+
+    // багажники
+    rearTrunk: "Не указано",
+    frontTrunk: "Не указано",
+
+    // защита рук
+    handProtection: "Не указано",
+    // задняя передача
+    reversGear: "Не указано",
+    // зеркала
+    mirrors: "Нет",
+    // гудок
+    horn: "Не указано",
+
+    // обогрев ручек
+    heatedGrips: "Не указано",
+
+    // передняя подвеска
+    frontSuspensionType: "Рычажная",
+    // задняя подвеска
+    rearSuspensionType: "Не указано",
+
+    // дорожный просвет
+    groundClearance: "Не указано",
+    price: 58600,
   },
 ];
-
-// {
-//   id: "pit-001",
-//   categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
-//   sku: "AV-PIT-150-RED",
-//   manufacturer_sku: "AV150R2025",
-//   brand: "Avantis",
-//   engineVolume: 150,
-//   enginePower: 13.0,
-//   fuelType: "АИ-95",
-//   fuelSystem: "carburetor",
-//   coolingType: "air",
-//   ignitionType: "CDI",
-//   fuelTankVolume: 6.5,
-//   fuelTankMaterial: "metal",
-//   starterType: "electric+kick",
-//   transmissionType: "manual",
-//   dryWeight: 82,
-//   headlight: "yes",
-//   year: 2025,
-//   images: [
-//     "https://avantis.club/xml/in/goods/import_files/87/876a9ce3-d34a-11ef-acd0-005056a46a53_487431d7-9dea-11f0-acd7-005056a46a53.png",
-//   ],
-//   starterKick: true,
-//   price: 250000,
-// },
-// {
-//   id: "pit-002",
-//   categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
-//   sku: "KAYO-BASIC-125",
-//   manufacturer_sku: "KY125T6",
-//   brand: "Kayo",
-//   engineVolume: 125,
-//   enginePower: 10.5,
-//   fuelType: "АИ-92",
-//   fuelSystem: "carburetor",
-//   coolingType: "air",
-//   ignitionType: "CDI",
-//   fuelTankVolume: 5.0,
-//   fuelTankMaterial: "plastic",
-//   starterType: "kick",
-//   transmissionType: "manual",
-//   dryWeight: 68,
-//   headlight: "no",
-//   year: 2024,
-//   images: [
-//     "https://avantis.club/xml/in/goods/import_files/87/876a9ce3-d34a-11ef-acd0-005056a46a53_487431d7-9dea-11f0-acd7-005056a46a53.png",
-//   ],
-//   starterKick: true,
-//   price: 250000,
-// },
-// {
-//   id: "pit-003",
-//   categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
-//   sku: "YCF-140-ADVENTURE",
-//   manufacturer_sku: "YCF140ADV",
-//   brand: "YCF",
-//   engineVolume: 140,
-//   enginePower: 12.0,
-//   fuelType: "АИ-95",
-//   fuelSystem: "carburetor",
-//   coolingType: "air",
-//   ignitionType: "CDI",
-//   fuelTankVolume: 5.5,
-//   fuelTankMaterial: "metal",
-//   starterType: "electric+kick",
-//   transmissionType: "manual",
-//   dryWeight: 75,
-//   headlight: "LED",
-//   year: 2024,
-//   images: [
-//     "https://avantis.club/xml/in/goods/import_files/87/876a9ce3-d34a-11ef-acd0-005056a46a53_487431d7-9dea-11f0-acd7-005056a46a53.png",
-//   ],
-//   starterKick: "yes",
-//   carburatorModel: "Mikuni VM24",
-//   price: 250000,
-// },
-// {
-//   id: "pit-004",
-//   categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
-//   sku: "COOLMOTO-138R",
-//   manufacturer_sku: "CM138R-PRO",
-//   brand: "Coolmoto",
-//   engineVolume: 138,
-//   enginePower: 11.2,
-//   fuelType: "АИ-92",
-//   fuelSystem: "carburetor",
-//   coolingType: "air",
-//   ignitionType: "CDI",
-//   fuelTankVolume: 4.8,
-//   fuelTankMaterial: "metal",
-//   starterType: "kick",
-//   transmissionType: "manual",
-//   dryWeight: 70,
-//   headlight: "no",
-//   year: 2023,
-//   images: [
-//     "https://avantis.club/xml/in/goods/import_files/87/876a9ce3-d34a-11ef-acd0-005056a46a53_487431d7-9dea-11f0-acd7-005056a46a53.png",
-//   ],
-//   starterKick: "yes",
-//   carburatorModel: "PE24",
-//   price: 250000,
-// },
-// {
-//   id: "pit-005",
-//   categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
-//   sku: "BSE-160-GP",
-//   manufacturer_sku: "BSE160R",
-//   brand: "BSE",
-//   engineVolume: 160,
-//   enginePower: 16.5,
-//   fuelType: "АИ-98",
-//   fuelSystem: "carburetor",
-//   coolingType: "liquid",
-//   ignitionType: "DC-CDI",
-//   fuelTankVolume: 7.2,
-//   fuelTankMaterial: "metal",
-//   starterType: "electric+kick",
-//   transmissionType: "manual",
-//   dryWeight: 88,
-//   headlight: "LED",
-//   year: 2025,
-//   images: [
-//     "https://avantis.club/xml/in/goods/import_files/87/876a9ce3-d34a-11ef-acd0-005056a46a53_487431d7-9dea-11f0-acd7-005056a46a53.png",
-//   ],
-//   starterKick: "yes",
-//   carburatorModel: "Nibbi PE28",
-//   price: 250000,
-// },
-// {
-//   id: "pit-006",
-//   categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
-//   sku: "PITSTER-PRO-125",
-//   manufacturer_sku: "PP125X",
-//   brand: "Pitster Pro",
-//   engineVolume: 125,
-//   enginePower: 9.8,
-//   fuelType: "АИ-92",
-//   fuelSystem: "carburetor",
-//   coolingType: "air",
-//   ignitionType: "CDI",
-//   fuelTankVolume: 5.2,
-//   fuelTankMaterial: "metal",
-//   starterType: "kick",
-//   transmissionType: "manual",
-//   dryWeight: 72,
-//   headlight: "optional",
-//   year: 2023,
-//   images: [
-//     "https://avantis.club/xml/in/goods/import_files/87/876a9ce3-d34a-11ef-acd0-005056a46a53_487431d7-9dea-11f0-acd7-005056a46a53.png",
-//   ],
-//   starterKick: "yes",
-//   carburatorModel: "PE22",
-//   price: 250000,
-// },
-// {
-//   id: "pit-007",
-//   categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
-//   sku: "MOTOYA-MINI-110",
-//   manufacturer_sku: "MT110M",
-//   brand: "Motoya",
-//   engineVolume: 110,
-//   enginePower: 7.5,
-//   fuelType: "АИ-92",
-//   fuelSystem: "carburetor",
-//   coolingType: "air",
-//   ignitionType: "CDI",
-//   fuelTankVolume: 3.8,
-//   fuelTankMaterial: "plastic",
-//   starterType: "kick",
-//   transmissionType: "manual",
-//   dryWeight: 58,
-//   headlight: "no",
-//   year: 2024,
-//   images: [
-//     "https://avantis.club/xml/in/goods/import_files/87/876a9ce3-d34a-11ef-acd0-005056a46a53_487431d7-9dea-11f0-acd7-005056a46a53.png",
-//   ],
-//   starterKick: "yes",
-//   carburatorModel: "PZ19",
-//   price: 250000,
-// },
-// {
-//   id: "pit-008",
-//   categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
-//   sku: "IRBIS-TTR125",
-//   manufacturer_sku: "IRB125R",
-//   brand: "Irbis",
-//   engineVolume: 125,
-//   enginePower: 8.5,
-//   fuelType: "АИ-92",
-//   fuelSystem: "carburetor",
-//   coolingType: "air",
-//   ignitionType: "CDI",
-//   fuelTankVolume: 4.5,
-//   fuelTankMaterial: "metal",
-//   starterType: "electric+kick",
-//   transmissionType: "manual",
-//   dryWeight: 76,
-//   headlight: "yes",
-//   year: 2024,
-//   images: [
-//     "https://avantis.club/xml/in/goods/import_files/87/876a9ce3-d34a-11ef-acd0-005056a46a53_487431d7-9dea-11f0-acd7-005056a46a53.png",
-//   ],
-//   starterKick: "yes",
-//   carburatorModel: "PZ26",
-//   price: 250000,
-// },
-// {
-//   id: "pit-009",
-//   categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
-//   sku: "ZONGSHEN-PITBOSS",
-//   manufacturer_sku: "ZS150GY",
-//   brand: "Zongshen",
-//   engineVolume: 150,
-//   enginePower: 12.5,
-//   fuelType: "АИ-95",
-//   fuelSystem: "carburetor",
-//   coolingType: "air",
-//   ignitionType: "CDI",
-//   fuelTankVolume: 6.0,
-//   fuelTankMaterial: "metal",
-//   starterType: "electric+kick",
-//   transmissionType: "manual",
-//   dryWeight: 85,
-//   headlight: "LED",
-//   year: 2023,
-//   images: [
-//     "https://avantis.club/xml/in/goods/import_files/87/876a9ce3-d34a-11ef-acd0-005056a46a53_487431d7-9dea-11f0-acd7-005056a46a53.png",
-//   ],
-//   starterKick: "yes",
-//   carburatorModel: "Nibbi PE24",
-//   price: 250000,
-// },
-// {
-//   id: "pit-010",
-//   categoryId: "31fd2074-397f-4f39-9b44-cd7a25f4f11e",
-//   sku: "APOLLO-125-DB",
-//   manufacturer_sku: "AP125RF",
-//   brand: "Apollo",
-//   engineVolume: 125,
-//   enginePower: 9.2,
-//   fuelType: "АИ-92",
-//   fuelSystem: "carburetor",
-//   coolingType: "air",
-//   ignitionType: "CDI",
-//   fuelTankVolume: 5.0,
-//   fuelTankMaterial: "metal",
-//   starterType: "kick",
-//   transmissionType: "manual",
-//   dryWeight: 70,
-//   headlight: "no",
-//   year: 2024,
-//   images: [
-//     "https://avantis.club/xml/in/goods/import_files/87/876a9ce3-d34a-11ef-acd0-005056a46a53_487431d7-9dea-11f0-acd7-005056a46a53.png",
-//   ],
-//   starterKick: "yes",
-//   carburatorModel: "PZ22",
-//   price: 250000,
-// },
