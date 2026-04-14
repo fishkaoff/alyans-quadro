@@ -1,6 +1,7 @@
 import AboutView from "@/views/about/AboutView.vue";
 import ContactPage from "@/views/contact/ContactPage.vue";
 import Cookies from "@/views/documents/Cookies.vue";
+import DeliveryAndPayment from "@/views/documents/DeliveryAndPayment.vue";
 import PdAgreement from "@/views/documents/PdAgreement.vue";
 import PrivacyPolicy from "@/views/documents/PrivacyPolicy.vue";
 import Requisites from "@/views/documents/Requisites.vue";
@@ -62,6 +63,11 @@ const router = createRouter({
       path: "/requisites",
       name: "Requisites",
       component: Requisites,
+    },
+    {
+      path: "/delivery-and-payment",
+      name: "DeliveryRules",
+      component: DeliveryAndPayment,
     },
   ],
 });

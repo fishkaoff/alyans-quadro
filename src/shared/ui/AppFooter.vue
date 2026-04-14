@@ -20,7 +20,9 @@
             <router-link :to="{ name: 'Home' }">Главная</router-link>
           </h3>
           <h3 class="col-item">
-            <router-link :to="{ name: 'Catalog' }">Каталог</router-link>
+            <router-link :to="{ name: 'DeliveryRules' }"
+              >Доставка и оплата</router-link
+            >
           </h3>
           <h3 class="col-item">
             <router-link :to="{ name: 'AboutPage' }">О компании</router-link>
